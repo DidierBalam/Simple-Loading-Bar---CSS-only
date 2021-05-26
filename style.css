@@ -1,0 +1,38 @@
+ /* Loading Bar Styles */
+
+ .loading-bar {
+     position: relative;
+     width: 15em;
+     height: 0.5em;
+     border-radius: 1em;
+     background-color: #f8f5ff;
+     overflow: hidden;
+ }
+
+ .loading-bar .loading-bar-child {
+     position: absolute;
+     width: 5em;
+     height: 100%;
+     background-color: #8e35f9;
+     border-radius: 1em;
+     -webkit-animation: loading_bar_transition 1s infinite;
+     animation: loading_bar_transition 1s infinite;
+ }
+
+ @-webkit-keyframes loading_bar_transition {
+     0% {
+         margin-left: 0;
+     }
+     100% {
+         margin-left: 15em;
+     }
+ }
+
+ @keyframes loading_bar_transition {
+     0% {
+         margin-left: 0;
+     }
+     100% {
+         margin-left: 15em;
+     }
+ }
