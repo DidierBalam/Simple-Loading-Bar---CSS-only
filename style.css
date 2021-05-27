@@ -1,38 +1,51 @@
- /* Loading Bar Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
- .loading-bar {
-     position: relative;
-     width: 15em;
-     height: 0.5em;
-     border-radius: 1em;
-     background-color: #f8f5ff;
-     overflow: hidden;
- }
+body {
+    font-family: poppins, sans-serif;
+}
 
- .loading-bar .loading-bar-child {
-     position: absolute;
-     width: 5em;
-     height: 100%;
-     background-color: #8e35f9;
-     border-radius: 1em;
-     -webkit-animation: loading_bar_transition 1s infinite;
-     animation: loading_bar_transition 1s infinite;
- }
+/* Loading Bar Styles */
 
- @-webkit-keyframes loading_bar_transition {
-     0% {
-         margin-left: 0;
-     }
-     100% {
-         margin-left: 15em;
-     }
- }
+.loading-title {
+    text-align: center;
+    color: #dddddd;
+    font-size: 1.1em;
+    font-weight: 500;
+}
 
- @keyframes loading_bar_transition {
-     0% {
-         margin-left: 0;
-     }
-     100% {
-         margin-left: 15em;
-     }
- }
+.loading-bar {
+    position: relative;
+    width: 15em;
+    height: 0.5em;
+    border-radius: 1em;
+    background-color: #f8f5ff;
+    overflow: hidden;
+}
+
+.loading-bar .loading-bar-child {
+    position: absolute;
+    width: 5em;
+    height: 100%;
+    background-color: #8e35f9;
+    border-radius: 1em;
+    -webkit-animation: loading_bar_transition 1s infinite;
+    animation: loading_bar_transition 1s infinite;
+}
+
+@-webkit-keyframes loading_bar_transition {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 15em;
+    }
+}
+
+@keyframes loading_bar_transition {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 15em;
+    }
+}
