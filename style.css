@@ -2,6 +2,12 @@
 
 body {
     font-family: poppins, sans-serif;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 /* Loading Bar Styles */
